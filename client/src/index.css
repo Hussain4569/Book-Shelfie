@@ -1,0 +1,150 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: #D8E3E7;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px 20px;
+    box-shadow: 0px 2px 1px #132C33;
+}
+
+.navbar--info {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    width: 20%;
+    margin: 8px 0;
+}
+
+.btn {
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.12em;
+    color: #D8E3E7;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #132C33;
+    transition: all 0.2s;
+}
+  
+.btn:hover {
+    color: #132C33;
+    background-color: #D8E3E7;
+    cursor: pointer;
+}
+
+
+/* **************************** auth form styles **************************** */
+
+.auth-container {
+    /* display: inline-block; */
+    background-color: white;
+    margin: 100px auto;
+    width: 25%;
+    border-radius: 15px;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.auth-container h1 {
+    margin: 0.6rem;
+    color: #132C33;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.auth-container input {
+    padding: 15px;
+    font-size: larger;
+}
+
+.auth-container input:focus {
+    border-color: #132C33;
+}
+
+.alt-auth-option {
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* **************************** home page styles **************************** */
+.home-page {
+    position: relative;
+}
+
+.book-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* **************************** book card styles **************************** */
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 1px #132C33;
+    width: 25%;
+}
+
+.book-title {
+    margin: 0;
+}
+
+.close-icon {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+/* **************************** add book styles **************************** */
+.add-book-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 1px #132C33;
+    width: 40%;
+}
+
+.add-book-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.add-book-container form input {
+    padding: 15px;
+    font-size: larger;
+}
+
+.add-book-container form textarea {
+    padding: 15px;
+    font-size: larger;
+    font-family: "Roboto", sans-serif;
+}
