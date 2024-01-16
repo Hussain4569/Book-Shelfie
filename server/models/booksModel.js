@@ -25,6 +25,11 @@ const bookSchema = new mongoose.Schema({
         type: String,
         default: "No review",
     },
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: "User",
+    },
 });
 
 const Book = mongoose.model("Book", bookSchema);
