@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotnev from "dotenv";
 
 import booksRoutes from "./routes/booksRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 
 dotnev.config();
 
@@ -10,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 app.use("/api/books", booksRoutes);
-app.use("/api/users", usersRoutes);
+app.use("/api/users", userRoutes);
 
 const PORT = process.env.PORT || 5000;
 
