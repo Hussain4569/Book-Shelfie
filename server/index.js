@@ -1,11 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
-import dotnev from "dotenv";
+import dotenv from "dotenv";
 
 import booksRoutes from "./routes/booksRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 
-dotnev.config();
+dotenv.config();
 
 const app = express();
 

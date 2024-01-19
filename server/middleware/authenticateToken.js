@@ -1,8 +1,13 @@
 import jwt from "jsonwebtoken";
 
+import dotenv from 'dotenv';
+dotenv.config();
+
 const authenticateToken = (req, res, next) => {
+    console.log(req.headers);
     const authHeader = req.headers["authorization"];
     const token = authHeader && authHeader.split(" ")[1];
+    console.log(token);
 
     if (token === null) return res.status(401).send("No token");
 
